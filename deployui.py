@@ -120,10 +120,14 @@ class Gesture:
 # Create a new object and execute.
 detector = Gesture(capture_index=0, model_name='runs/train/Best3-5kelas-100epoch-valid-min.halo.tuhan/weights/best.pt')
 
-# GUI
+# GUI Main Window
 root = tkinter.Tk()
 root.title("Gestur Bahasa Isyarat Indonesia")
 root.geometry('600x550')
+
+# Label
+label_root = tkinter.Label(root, text= "Gestur yang tersedia", font=("Helvetica, 15"), anchor='w', width= 50)
+label_root.pack()
 
 def window_guide():
      
@@ -154,9 +158,6 @@ def window_guide():
      width=590,
      font=("Helvetica, 15")).pack()
 
-# Label
-label_root = tkinter.Label(root, text= "Gestur yang tersedia", font=("Helvetica, 15"), anchor='w', width= 50)
-label_root.pack()
 
 # Image
 img_gestures = Image.open("assets\Gestures.png")
