@@ -118,7 +118,7 @@ class Gesture:
         cv2.destroyAllWindows()
         
 # Create a new object and execute.
-detector = Gesture(capture_index=0, model_name='runs/train/Best3-5kelas-100epoch-valid-min.halo.tuhan/weights/best.pt')
+detector = Gesture(capture_index=0, model_name='runs/train/best/weights/best.pt')
 
 # GUI Main Window
 root = tkinter.Tk()
